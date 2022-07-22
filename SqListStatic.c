@@ -18,10 +18,6 @@ PrintList(SqListStatic* L) {
 	printf("\n");
 }
 
-int test()
-{
-	return 0;
-}
 
 void ListInsert(SqListStatic* L, int i, int e) {
 	for (int k = L->length; k >= i; k--)

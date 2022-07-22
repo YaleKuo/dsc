@@ -9,5 +9,3 @@ void InitList(SqListStatic* L);
 void ListInsert(SqListStatic* L, int i, int e);
 
 PrintList(SqListStatic* L);
-
-int test();
