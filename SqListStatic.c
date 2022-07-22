@@ -1,5 +1,6 @@
 #include "SqListStatic.h"
 #include <stdio.h>
+#include <stdbool.h>
 
 void InitList(SqListStatic* L)
 {
@@ -18,11 +19,12 @@ PrintList(SqListStatic* L) {
 	printf("\n");
 }
 
-void ListInsert(SqListStatic* L, int i, int e) {
+bool ListInsert(SqListStatic* L, int i, int e) {
 	for (int k = L->length; k >= i; k--)
 	{
 		L->data[k] = L->data[k - 1];
 	}
 	L->data[i - 1] = e;
 	L->length++;
+	return true;
 }
