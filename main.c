@@ -14,9 +14,10 @@ int main() {
 
 	
 	int e = -1;
+	int* pe = &e;
 	printf("%d\n", e);
-	printf("delete ture or false:%d\n", ListDelete(&L, 2, e));
-	printf("%d\n", e);
+	printf("delete ture or false:%d\n", ListDelete(&L, 5, pe));
+	printf("%d\n", e);// £¨*pe£©¾ÍÊÇe
 	PrintList(&L);
 
 
