@@ -9,4 +9,6 @@ void InitList(SqListStatic* L);
 
 bool ListInsert(SqListStatic* L, int i, int e);
 
+bool ListDelete(SqListStatic* L, int i,int* e);
+
 PrintList(SqListStatic* L);

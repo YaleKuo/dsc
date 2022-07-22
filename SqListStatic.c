@@ -30,3 +30,13 @@ bool ListInsert(SqListStatic* L, int i, int e) {
 	L->length++;
 	return true;
 }
+
+bool ListDelete(SqListStatic* L, int i, int* e)
+{
+	if (L->length == 0)return false;
+	if (i<1 || i>L->length)return false;
+
+
+
+	return false;
+}
