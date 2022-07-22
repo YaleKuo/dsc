@@ -20,6 +20,8 @@ PrintList(SqListStatic* L) {
 }
 
 bool ListInsert(SqListStatic* L, int i, int e) {
+	if (L->length >= MaxSize)return false;
+	if (i<1 || i>L->length + 1)return false;
 	for (int k = L->length; k >= i; k--)
 	{
 		L->data[k] = L->data[k - 1];
