@@ -12,13 +12,11 @@ int main() {
 	printf("insert true or false:%d\n", ListInsert(&L, 4, 4));
 	PrintList(&L);
 
-	
-	int e = -1;
-	int* pe = &e;
-	printf("%d\n", e);
-	printf("delete ture or false:%d\n", ListDelete(&L, 5, pe));
-	printf("%d\n", e);// （*pe）就是e
+	int e = -1; int* pe = &e;
+	printf("delete ture or false:%d\te = %d\n", ListDelete(&L, 5, pe),e);// （*pe）就是e
 	PrintList(&L);
+
+
 
 
 	return 0;

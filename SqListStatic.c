@@ -36,7 +36,7 @@ bool ListDelete(SqListStatic* L, int i, int* e)
 	if (L->length == 0)return false;
 	if (i<1 || i>L->length)return false;
 	*e = L->data[i - 1];
-	printf("%d\n", *e);
+	//printf("%d\n", *e);
 	for (int k = i-1; k < L->length-1; k++)
 	{
 		L->data[k] = L->data[k + 1];
