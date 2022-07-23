@@ -33,8 +33,7 @@ bool ListInsert(SqListStatic* L, int i, int e) {
 
 bool ListDelete(SqListStatic* L, int i, int* e)
 {
-	if (L->length == 0)return false;
-	if (i<1 || i>L->length)return false;
+	if (i<1 || i>L->length)return false;// i>L->length就已经判断了当L->length<=0等错误情况
 	*e = L->data[i - 1];
 	//printf("%d\n", *e);
 	for (int k = i-1; k < L->length-1; k++)
@@ -42,5 +41,13 @@ bool ListDelete(SqListStatic* L, int i, int* e)
 		L->data[k] = L->data[k + 1];
 	}
 	L->length--;
+	return true;
+}
+
+bool LocateElem(SqListStatic* L, int e)
+{
+
+
+
 	return true;
 }

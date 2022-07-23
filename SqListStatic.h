@@ -11,4 +11,6 @@ bool ListInsert(SqListStatic* L, int i, int e);
 
 bool ListDelete(SqListStatic* L, int i,int* e);
 
+bool LocateElem(SqListStatic* L, int e);
+
 PrintList(SqListStatic* L);
