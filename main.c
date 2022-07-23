@@ -20,6 +20,10 @@ int main() {
 	printf("the index of %d:%d\n", el, LocateElem(&L, el));
 	PrintList(&L);
 
+	int min = -1; int* pmin = &min;
+	printf("delete min true or false:%d\tmin = %d\n", DeleteMin(&L, pmin),min);
+	PrintList(&L);
+
 	return 0;
 }
 

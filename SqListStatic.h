@@ -13,4 +13,6 @@ bool ListDelete(SqListStatic* L, int i,int* e);
 
 int LocateElem(SqListStatic* L, int e);
 
+bool DeleteMin(SqListStatic* L, int* e);
+
 PrintList(SqListStatic* L);

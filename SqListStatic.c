@@ -52,3 +52,23 @@ int LocateElem(SqListStatic* L, int e)
 	}
 	return -1;
 }
+
+bool DeleteMin(SqListStatic* L, int* e)// P30_1 删除顺序表最小值并返回,空出的位置由最后一个元素填补
+{
+	if (L->length == 0)return false;// bug在这里L->length = 0
+	int min = L->data[0];
+	int index = 0;
+	for (int i = 0; i < L->length; i++)
+	{
+		if (L->data[i] < min) {
+			min = L->data[i];
+			index = i;
+		}
+	}
+	if(index<L->length){// 如果不判断会警告读取无效数据,万一data数组里面没有index这个位置呢
+		L->data[index] = L->data[L->length - 1];
+	}
+	*e = min;
+	L->length--;// 由最后一个元素填补而不仅是复制其值
+	return true;
+}
