@@ -44,10 +44,11 @@ bool ListDelete(SqListStatic* L, int i, int* e)
 	return true;
 }
 
-bool LocateElem(SqListStatic* L, int e)
+int LocateElem(SqListStatic* L, int e)
 {
-
-
-
-	return true;
+	for (int i = 0; i < L->length; i++)
+	{
+		if (L->data[i] == e)return i + 1;// 返回其下标i,返回其位序i + 1
+	}
+	return -1;
 }

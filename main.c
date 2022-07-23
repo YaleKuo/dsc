@@ -16,8 +16,9 @@ int main() {
 	printf("delete ture or false:%d\te = %d\n", ListDelete(&L, 5, pe),e);// £¨*pe£©¾ÍÊÇe
 	PrintList(&L);
 
-
-
+	int el = 6;
+	printf("the index of %d:%d\n", el, LocateElem(&L, el));
+	PrintList(&L);
 
 	return 0;
 }
