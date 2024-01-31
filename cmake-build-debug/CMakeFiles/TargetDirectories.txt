@@ -1,0 +1,3 @@
+D:/career/clion/dsc/cmake-build-debug/CMakeFiles/dsc.dir
+D:/career/clion/dsc/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/career/clion/dsc/cmake-build-debug/CMakeFiles/rebuild_cache.dir
