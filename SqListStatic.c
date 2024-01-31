@@ -11,7 +11,7 @@ void InitList(SqListStatic* L)
 	L->length = 0;
 }
 
-PrintList(SqListStatic* L) {
+int PrintList(SqListStatic* L) {
 	for (int i = 0; i < L->length; i++)
 	{
 		printf("%d ", L->data[i]);
